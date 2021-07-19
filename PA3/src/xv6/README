@@ -1,0 +1,15 @@
+The test programs are all ran by booting XV6
+	make qemu-nox
+And then running the user test programs with their names
+	* sharedmem
+	* sharedmemreset
+	* sharedmemfree
+	* sharedmemfreenoget
+	* sharedmemnofree
+	* sharedmemdoublefree
+	* sharedmemtwokeys
+	* sharedmemsamekeypage
+CS450 Fall 2019
+Programming Assignment 3
+Jingwen Pickens (A20349887)
+Anthony Pollizi (A20413465)

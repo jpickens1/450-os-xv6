@@ -1,0 +1,41 @@
+#	CS450 Fall 2019
+#	Programming Assignment 3
+#	Jingwen Pickens (A20349887)
+#	Anthony Pollizi (A20413465)
+  
+#    Added SYSCALL(sharedmempage), and SYSCALL(freesharemage)
+
+
+#include "syscall.h"
+#include "traps.h"
+
+#define SYSCALL(name) \
+  .globl name; \
+  name: \
+    movl $SYS_ ## name, %eax; \
+    int $T_SYSCALL; \
+    ret
+
+SYSCALL(fork)
+SYSCALL(exit)
+SYSCALL(wait)
+SYSCALL(pipe)
+SYSCALL(read)
+SYSCALL(write)
+SYSCALL(close)
+SYSCALL(kill)
+SYSCALL(exec)
+SYSCALL(open)
+SYSCALL(mknod)
+SYSCALL(unlink)
+SYSCALL(fstat)
+SYSCALL(link)
+SYSCALL(mkdir)
+SYSCALL(chdir)
+SYSCALL(dup)
+SYSCALL(getpid)
+SYSCALL(sbrk)
+SYSCALL(sleep)
+SYSCALL(uptime)
+SYSCALL(getsharedpage)
+SYSCALL(freesharedpage)

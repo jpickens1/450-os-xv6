@@ -1,0 +1,26 @@
+Create small file directory * 
+Remove small file directory * 
+
+Create small file direcotry inside regular directory * 
+Create regular directory inside small file directory * 
+Create small directory inside a small directory *
+
+Create a small file (inside a small file directory) *
+Create a regular file (inside a regular directory) *
+
+Read a small file *
+Write to a small file *
+	Write too much to a small file
+
+Write to a regular file *
+Read a regular file *
+
+Remove a small file
+Remove a regular file
+
+Create a regular directory * 
+Remove a regular directory
+
+cd into a small file directory *
+
+ls small directory *
